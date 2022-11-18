@@ -10,6 +10,7 @@ picture {
   max-width: 100%;
   display: block;
 }
+/* Designing the grid */
 
 .grid-3-column {
     display: grid;
@@ -25,16 +26,22 @@ picture {
 }
 
 .grid:nth-child(1) {
-    grid-area: three;
+    grid-area: one;
 
 }
 
 .grid:nth-child(2) {
-    grid-area:two;
+    grid-area:one;
 
 }
 
 .grid:nth-child(3) {
-    grid-area: one;
+    grid-area: three;
 
+}
+
+.grid img {
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
 }
