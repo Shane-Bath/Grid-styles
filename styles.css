@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    background-color: #f0ead6;
+    font-family: 'Overpass', sans-serif;
+    color: #222d52;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.grid-3-column {
+    display: grid;
+    gap: 1.5em;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three';
+
+    padding-block: 15px;
+    width: min(95%);
+    margin-inline: auto;
+}
+
+.grid:nth-child(1) {
+    grid-area: three;
+
+}
+
+.grid:nth-child(2) {
+    grid-area:two;
+
+}
+
+.grid:nth-child(3) {
+    grid-area: one;
+
+}
